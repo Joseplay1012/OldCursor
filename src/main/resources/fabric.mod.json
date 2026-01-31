@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "oldcursor",
+  "version": "${version}",
+  "name": "OldCursor",
+  "description": "Removes the new cursor when hovering over buttons or interactions.",
+  "authors": ["joseplay1012"],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/oldcursor/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "net.joseplay.oldcursor.client.OldcursorClient"
+    ],
+    "main": [
+      "net.joseplay.oldcursor.Oldcursor"
+    ]
+  },
+  "mixins": [
+    "oldcursor.mixins.json",
+    {
+      "config": "oldcursor.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}

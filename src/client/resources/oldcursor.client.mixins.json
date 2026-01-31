@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.joseplay.oldcursor.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "CursorDrawContext"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
